@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Browser Stack" thread-count="3" parallel="tests">
+
+<!--    <listeners>-->
+<!--        <listener class-name = "com.mindtree.utility.ExtentReporterNG"></listener>-->
+<!--        <listener class-name = "com.mindtree.utility.Listeners"></listener>-->
+<!--    </listeners>-->
+
+    <test  name="Browser Stack = Chrome">
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="10"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser_version" value="120.0"/>
+        <classes>
+            <class name = "com.mindtree.runner.TestRunnerBS"></class>
+        </classes>
+    </test>
+
+    <test  name="Browser Stack = Edge">
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Catalina"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="browser_version" value="latest"/>
+        <classes>
+            <class name = "com.mindtree.runner.TestRunnerBS"></class>
+        </classes>
+    </test>
+
+    <test  name="Browser Stack = FireFox">
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="browser_version" value="120.0"/>
+
+    <classes>
+        <class name = "com.mindtree.runner.TestRunnerBS"></class>
+    </classes>
+</test>
+</suite>

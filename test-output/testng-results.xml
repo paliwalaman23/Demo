@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="0" failed="13" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-13T09:49:33 IST" name="Default suite" finished-at="2022-05-13T09:50:04 IST" duration-ms="30174">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-05-13T09:49:33 IST" name="Default test" finished-at="2022-05-13T09:50:04 IST" duration-ms="30174">
+      <class name="com.mindtree.runner.BigSmall">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:34 IST" name="setUpClass" finished-at="2022-05-13T09:49:34 IST" duration-ms="380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@178270b2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:37 IST" duration-ms="3210" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Opening the Browser and hitting the url"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Landing on webpage]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of MSEdgeDriver only supports MSEdge version 95
+Current browser version is 101.0.1210.39 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'LAPTOP-V6VACEO9', ip: '192.168.43.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693C291C2+447458]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF693857053+950835]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF693881511+1124081]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF69387DB38+1109272]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF693876D0A+1081066]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938B204C+1323564]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938AD08F+1303151]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF69388334F+1131823]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF69388445F+1136191]
+Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF69393CA9D+14365]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938EDEE5+1568965]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693AFAC49+2617]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938EEEAE+1573006]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BCA9A8+60360]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BCA204+58404]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BCA056+57974]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BFA74C+256364]
+BaseThreadInitThunk [0x00007FFB57E754E0+16]
+RtlUserThreadStart [0x00007FFB584C485B+43]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of MSEdgeDriver only supports MSEdge version 95
+Current browser version is 101.0.1210.39 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'LAPTOP-V6VACEO9', ip: '192.168.43.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693C291C2+447458]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF693857053+950835]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF693881511+1124081]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF69387DB38+1109272]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF693876D0A+1081066]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938B204C+1323564]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938AD08F+1303151]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF69388334F+1131823]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF69388445F+1136191]
+Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF69393CA9D+14365]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938EDEE5+1568965]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693AFAC49+2617]
+Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6938EEEAE+1573006]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BCA9A8+60360]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BCA204+58404]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BCA056+57974]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF693BFA74C+256364]
+BaseThreadInitThunk [0x00007FFB57E754E0+16]
+RtlUserThreadStart [0x00007FFB584C485B+43]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at com.mindtree.reusableComponent.WebDriverHelper.initializeDriver(WebDriverHelper.java:41)
+at com.mindtree.StepDefinitions.HomePageSD.open_the_browser(HomePageSD.java:28)
+at ✽.Open the Browser(file:///D:/CA_Cucumber/Feature/01HomePage.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:42 IST" duration-ms="5023" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with different credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.SignInPage.getSignIn(SignInPage.java:52)
+at com.mindtree.StepDefinitions.SignInSD.user_click_on_signin(SignInSD.java:34)
+at ✽.user click on SignIn(file:///D:/CA_Cucumber/Feature/02SignIn.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:47 IST" duration-ms="5023" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with different credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.SignInPage.getSignIn(SignInPage.java:52)
+at com.mindtree.StepDefinitions.SignInSD.user_click_on_signin(SignInSD.java:34)
+at ✽.user click on SignIn(file:///D:/CA_Cucumber/Feature/02SignIn.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:52 IST" duration-ms="5009" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with different credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.SignInPage.getSignIn(SignInPage.java:52)
+at com.mindtree.StepDefinitions.SignInSD.user_click_on_signin(SignInSD.java:34)
+at ✽.user click on SignIn(file:///D:/CA_Cucumber/Feature/02SignIn.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:55 IST" duration-ms="3016" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Exploring the Personalized Gift section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Explore]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.PersonalizedGift.getPersonalGift(PersonalizedGift.java:29)
+at com.mindtree.StepDefinitions.PersonalizedGiftsSD.click_on_the_personalized_gift_section(PersonalizedGiftsSD.java:34)
+at ✽.Click on the Personalized Gift section(file:///D:/CA_Cucumber/Feature/03PersonalizedGift.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:55 IST" duration-ms="9" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Exploring by searching a product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Exploring]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.SearchPage.getSearchBox(SearchPage.java:18)
+at com.mindtree.StepDefinitions.SearcProductSD.click_the_searchbox(SearcProductSD.java:32)
+at ✽.Click the SearchBox(file:///D:/CA_Cucumber/Feature/04SearchProduct.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:55 IST" duration-ms="15" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Exploring the Christmas Gifts section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Explore]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.ChristmasGift.getChristmasGift(ChristmasGift.java:21)
+at com.mindtree.StepDefinitions.ChristmasGiftSD.click_on_the_chirstmas_gift_seaction_on_the_website(ChristmasGiftSD.java:31)
+at ✽.click on the Chirstmas Gift seaction on the website(file:///D:/CA_Cucumber/Feature/05ChristmasGift.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:49:59 IST" duration-ms="4026" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Exploring the Shop By Category section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Explore]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.ShopByCategory.getShopByCategory(ShopByCategory.java:23)
+at com.mindtree.StepDefinitions.ShopByCategorySD.click_on_the_shopbycategory(ShopByCategorySD.java:30)
+at ✽.click on the ShopByCategory(file:///D:/CA_Cucumber/Feature/06ShopByCategory.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:49:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:50:03 IST" duration-ms="4049" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Exploring the AllOfIt section of the Web site"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Explore]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.AllOfIt.getAllOfIT(AllOfIt.java:24)
+at com.mindtree.StepDefinitions.AllOfItSD.click_on_the_allofit_option_from_the_menu_bar(AllOfItSD.java:32)
+at ✽.Click on the AllOfIt option from the menu bar(file:///D:/CA_Cucumber/Feature/07AllOfIt.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:50:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:50:03 IST" duration-ms="29" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checking the Wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[WishList]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.WishList.getWishList(WishList.java:17)
+at com.mindtree.StepDefinitions.WishListSD.click_on_the_wishlist_in_the_web_page(WishListSD.java:30)
+at ✽.Click on the WishList in the web page(file:///D:/CA_Cucumber/Feature/08WishList.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:50:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:50:04 IST" duration-ms="145" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Going to About Us section in the web page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[About US]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.AboutUs.getAbout(AboutUs.java:18)
+at com.mindtree.StepDefinitions.AboutUsSD.click_on_the_about_us_from_he_footer_section(AboutUsSD.java:32)
+at ✽.Click on the About Us from he footer section(file:///D:/CA_Cucumber/Feature/09AboutUs.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:50:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:50:04 IST" duration-ms="38" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding the Gift Card"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Gidt Card]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.GiftCard.getGiftCard(GiftCard.java:20)
+at com.mindtree.StepDefinitions.GiftCardSD.click_on_the_gift_card_on_the_web_page(GiftCardSD.java:31)
+at ✽.Click on the Gift Card on the web page(file:///D:/CA_Cucumber/Feature/10GiftCard.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:50:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-13T09:50:04 IST" duration-ms="23" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Testing the Contact us"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.mindtree.pageObjects.ContactUs.getContinueShopping(ContactUs.java:18)
+at com.mindtree.StepDefinitions.ContactUsSD.click_on_contactus_footer(ContactUsSD.java:33)
+at ✽.Click on ContactUs footer(file:///D:/CA_Cucumber/Feature/11ContactUs.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mindtree.runner.BigSmall@625732]" started-at="2022-05-13T09:50:04 IST" name="tearDownClass" finished-at="2022-05-13T09:50:04 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.mindtree.runner.BigSmall -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
